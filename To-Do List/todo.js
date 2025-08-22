@@ -14,16 +14,16 @@ function addTask() {
     span.innerHTML = "\u00d7";
     li.appendChild(span);
   }
-  saveData(); //whenever data create it store data
+  saveData(); //use to store new data in localStorage
 }
 
 listContainer.addEventListener("click", (e) => {
   if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
-    saveData(); //whenever data checked it store updated data
+    saveData(); //checked data will store in the browser
   } else if (e.target.tagName === "SPAN") {
     e.target.parentElement.remove();
-    saveData(); // whenever data delete it store rest of the data
+    saveData(); // after remove the task rest of the data will store in localStorage
   }
 });
 
