@@ -38,6 +38,9 @@ body{
   width: 100%;
   border: 1px solid #222;
   padding: 10px;
+  padding-left: 15px;
+  letter-spacing: 2px;
+  font-size: 20px;
   margin: 10px 0;
   text-align: left;
   border-radius: 4px;
